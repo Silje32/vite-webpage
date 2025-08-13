@@ -1,8 +1,10 @@
+import "./style.css";
 import WebGLFluid from "webgl-fluid";
+import hearts from "/public/pexels-hearts.jpg";
 
 WebGLFluid(document.querySelector("canvas"), {
   TRIGGER: "hover",
-  IMMEDIATE: true,
+  IMMEDIATE: false,
   AUTO: false,
   INTERVAL: 3000,
   SIM_RESOLUTION: 128,
@@ -18,11 +20,11 @@ WebGLFluid(document.querySelector("canvas"), {
   SPLAT_COUNT: Number.parseInt(Math.random() * 20) + 5,
   SHADING: true,
   COLORFUL: true,
-  COLOR_UPDATE_SPEED: 10,
+  COLOR_UPDATE_SPEED: 8,
   PAUSED: false,
   BACK_COLOR: { r: 0, g: 0, b: 0 },
-  TRANSPARENT: false,
-  BLOOM: true,
+  TRANSPARENT: true,
+  BLOOM: false,
   BLOOM_ITERATIONS: 8,
   BLOOM_RESOLUTION: 256,
   BLOOM_INTENSITY: 0.8,

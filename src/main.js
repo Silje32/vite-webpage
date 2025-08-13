@@ -1,6 +1,6 @@
 import "./style.css";
 import WebGLFluid from "webgl-fluid";
-import hearts from "/public/pexels-hearts.jpg";
+import hearts from "./pexels-hearts.jpg";
 
 WebGLFluid(document.querySelector("canvas"), {
   TRIGGER: "hover",

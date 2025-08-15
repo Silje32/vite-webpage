@@ -1,5 +1,4 @@
 import "./style.css";
-import WebGLFluid from "webgl-fluid";
 import hearts from "./pexels-hearts.jpg";
 
 WebGLFluid(document.querySelector("canvas"), {
